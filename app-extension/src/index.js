@@ -6,7 +6,7 @@
  * API: https://github.com/quasarframework/quasar/blob/master/app/lib/app-extension/IndexAPI.js
  */
 
-function extendWithComponent (conf) {
+function extendWithComponent(conf) {
   // make sure boot file is registered
   conf.boot.push('~quasar-app-extension-qdraggabletree/src/boot/index.js')
 
@@ -20,8 +20,8 @@ module.exports = function (api) {
   // extend quasar.conf
   api.registerDescribeApi('', './components/QDraggableTree.json')
 
-  api.compatibleWith('quasar', '^1.5.11')
-  api.compatibleWith('@quasar/app', '^1.4.3 || ^2.0.0')
+  api.compatibleWith('quasar', '^1.5.11 || ^2.0.0')
+  api.compatibleWith('@quasar/app', '^1.4.3 || ^2.0.0 || ^3.0.0')
 
   api.extendQuasarConf(extendWithComponent)
 };

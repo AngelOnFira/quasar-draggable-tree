@@ -20,6 +20,6 @@
     "yarn": ">= 1.6.0"
   },
   "dependencies": {
-    "vuedraggable": "^2.23.2"
+    "vuedraggable":"^4.0.3"
   }
 }
